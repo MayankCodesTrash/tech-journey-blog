@@ -27,25 +27,25 @@ const NavBarContainer: React.FC<NavBarContainerProps> = ({title, children, links
   return (
     <div className="drawer flex-1">
       <input id="nav-drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col items-center pt-[4.25rem]">
-        <div className="navbar fixed top-0 z-10 h-18 w-full border-b border-base-300/70 bg-base-100/90 backdrop-blur">
-          <div className="flex-none hidden h-12 w-12 lg:block">
+      <div className="drawer-content flex flex-col items-center pt-[4.75rem]">
+        <div className="navbar fixed top-0 z-20 h-16 w-full border-b border-slate-300/80 bg-white/80 px-4 shadow-sm backdrop-blur md:px-6 lg:px-8">
+          <div className="hidden h-10 w-10 lg:block">
             <div className="avatar">
-              <div className="w-12 rounded-full border-2 border-primary">
-                <Image alt="Profile image" src={profilePic} />
+              <div className="w-10 rounded-full border-2 border-slate-700">
+                <Image alt="Profile image" src={profilePic} width={40} height={40} />
               </div>
             </div>
           </div>
-          <div className="flex-none h-12 w-12 lg:hidden">
-            <label htmlFor="nav-drawer" className="btn btn-square btn-ghost border border-base-300">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-6 w-6 stroke-current">
+          <div className="flex h-10 w-10 items-center justify-center lg:hidden">
+            <label htmlFor="nav-drawer" className="btn btn-square btn-ghost border border-slate-300 bg-white/70">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-5 w-5 stroke-current">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </label>
           </div>
-          <div className="mx-2 flex flex-1 items-center justify-between px-2">
+          <div className="mx-3 flex flex-1 items-center justify-between px-1">
             <Link href="/">
-              <h1 className="text-2xl font-semibold text-primary md:text-3xl">{title}</h1>
+              <h1 className="text-xl font-semibold text-slate-800 md:text-2xl">{title}</h1>
             </Link>
           </div>
           {links && (
@@ -61,7 +61,7 @@ const NavBarContainer: React.FC<NavBarContainerProps> = ({title, children, links
       {links && (
         <div className="drawer-side">
           <label htmlFor="nav-drawer" className="drawer-overlay"></label>
-          <ul className="menu h-full w-80 bg-base-100 p-4 pt-20 shadow-xl">
+          <ul className="menu h-full w-80 bg-white/95 p-4 pt-20 shadow-xl">
             {renderLinks()}
           </ul>
         </div>
