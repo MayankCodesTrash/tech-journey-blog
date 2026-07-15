@@ -2,31 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.sprite:hover {
-    animation: hop 300ms infinite;
+:root {
+  color-scheme: light;
 }
 
-/*:root {*/
-/*  --foreground-rgb: 0, 0, 0;*/
-/*  --background-start-rgb: 214, 219, 220;*/
-/*  --background-end-rgb: 255, 255, 255;*/
-/*}*/
+.sprite:hover {
+  animation: hop 300ms infinite;
+}
 
-/*@media (prefers-color-scheme: dark) {*/
-/*  :root {*/
-/*    --foreground-rgb: 255, 255, 255;*/
-/*    --background-start-rgb: 0, 0, 0;*/
-/*    --background-end-rgb: 0, 0, 0;*/
-/*  }*/
-/*}*/
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(125, 181, 255, 0.2), transparent 34%),
+    linear-gradient(135deg, #f4efe8 0%, #d8e7ec 45%, #b8c9d4 100%);
+  color: #15232f;
+}
 
-/*body {*/
-/*  color: rgb(var(--foreground-rgb));*/
-/*  background: linear-gradient(*/
-/*      to bottom,*/
-/*      transparent,*/
-/*      rgb(var(--background-end-rgb))*/
-/*    )*/
-/*    rgb(var(--background-start-rgb));*/
-/*}*/
+::selection {
+  background: rgba(34, 79, 117, 0.22);
+  color: #102436;
+}
+
+.prose a {
+  color: #27506b;
+}
+
+.prose a:hover {
+  color: #4d7a98;
+}

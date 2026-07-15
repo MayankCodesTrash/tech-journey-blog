@@ -4,18 +4,25 @@ module.exports = {
         themes: [
             {
                 coffeeShop: {
-                    "primary": "#4a3728",     // Rich Espresso
-                    "secondary": "#a07855",   // Warm Latte
-                    "accent": "#d4a373",      // Caramel Crema
-                    "neutral": "#231b15",     // Dark Roasted Bean
-                    "base-100": "#faf7f2",    // Milk Foam / Cozy Cream
+                    "primary": "#4a3728",           // Rich Espresso
+                    "primary-content": "#faf7f2",   // White foam text on dark espresso
+                    "secondary": "#a07855",         // Warm Latte
+                    "secondary-content": "#faf7f2", // White foam text
+                    "accent": "#d4a373",            // Caramel Crema
+                    "accent-content": "#231b15",    // Dark text on caramel
+                    "neutral": "#231b15",           // Dark Roasted Bean
+                    "neutral-content": "#faf7f2",   // Light text
+                    "base-100": "#faf7f2",          // Cozy Cream Main Background
+                    "base-200": "#f0ede6",          // Slightly darker cream for cards/sections
+                    "base-300": "#e3ded5",          // Borders and dividers
+                    "base-content": "#231b15",      // Dark Roast main text color (Fixes the white-out)
                     "info": "#38bdf8",
                     "success": "#4ade80",
                     "warning": "#facc15",
                     "error": "#f87171",
                 },
             },
-            "dark", // Fallback dark mode
+            "dark", // Standard backup dark mode
         ],
     },
     content: [
@@ -31,7 +38,6 @@ module.exports = {
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
             keyframes: {
-                // Smoother, cooler bouncing motion
                 smoothBounce: {
                     '0%, 100%': {
                         transform: 'translateY(-4%)',
@@ -44,7 +50,6 @@ module.exports = {
                 },
             },
             animation: {
-                // Clean, continuous micro-interaction
                 'smooth-bounce': 'smoothBounce 1.5s infinite',
             }
         },
