@@ -1,6 +1,6 @@
 ---
-title: "Navigating the Cosmos with Misspelled Words: A Starship Captain's Frustration"
-date: '2023-07-20'
+title: "Trying to find what will happen if we remove zoning laws"
+date: '2025-07-15'
 ---
 
 *Captain's Log, Stardate 45192.3*
