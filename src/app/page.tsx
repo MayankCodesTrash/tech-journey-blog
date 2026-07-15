@@ -24,8 +24,8 @@ export default function Home() {
           </p>
           <div className={'my-4'}>
             <i>
-              Check out the repo{' '}
-                <Link href={'https://github.com/ludu12/tech-journey-blog'}>
+              Check out the linkedin!!{' '}
+                <Link href={'https://www.linkedin.com/in/mayank-bhatt-03b2b7313/'}>
                   <button className={'btn btn-sm btn-primary'}>
                       <span className={'text-primary-content'}>
                         here

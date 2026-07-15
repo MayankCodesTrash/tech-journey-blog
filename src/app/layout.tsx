@@ -14,6 +14,7 @@ const title = 'Mayank\'s Site';
 const description = 'This my personal site';
 const links = [
   {title: 'Pokemon', href: '/pokemon'},
+  {title: 'C', href: '/pokemon'},
 ];
 const SocialLinks = {
   twitter: 'https://x.com/dunscombe_luke',
